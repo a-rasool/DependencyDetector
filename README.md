@@ -1,16 +1,16 @@
 # Exploring Probabilistic Variable Dependencies
 
-[cite_start]This project is a data science research initiative to explore the intersection of data science and probability through software development. [cite: 3] [cite_start]The core aim is to design and build a **scalable tool that identifies and visualizes probabilistic dependencies** between features in large datasets. [cite: 5] [cite_start]This work seeks to bridge the gap between probabilistic modeling and applied data engineering by implementing scalable algorithms for large-scale data analysis. [cite: 6]
+This project is a data science research initiative to explore the intersection of data science and probability through software development [3]. The core aim is to design and build a **scalable tool that identifies and visualizes probabilistic dependencies** between features in large datasets [5]. This work seeks to bridge the gap between probabilistic modeling and applied data engineering by implementing scalable algorithms for large-scale data analysis [6].
 
-***
+---
 
 ## Features
 
-* [cite_start]**Dependency Detection**: Implements probabilistic techniques like Bayesian networks to uncover complex, non-linear dependencies between variables. [cite: 10, 52]
+* **Dependency Detection**: Implements probabilistic techniques like Bayesian networks to uncover complex, non-linear dependencies between variables [10, 52].
 * **Extensible Design**: Built with a clean, Object-Oriented structure that allows for new detection methods to be easily added.
-* [cite_start]**Synthetic Data Generation**: Includes a configurable script to pragmatically generate datasets with controlled dependency structures for robust testing. [cite: 19, 20]
+* **Synthetic Data Generation**: Includes a configurable script to pragmatically generate datasets with controlled dependency structures for robust testing [19, 20].
 
-***
+---
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ Follow these instructions to set up the project environment and run the dependen
     pip install -e .
     ```
 
-***
+---
 
 ## Usage
 
@@ -54,7 +54,4 @@ The workflow involves generating data based on a configuration and then analyzin
 
 ### **1. Generate Synthetic Data**
 
-The project uses a `config.json` file to define variables and their relationships. [cite: 3] You can generate a dataset based on this configuration using the provided script.
-
-```bash
-python scripts/generate_data.py --config synthetic_data_generation/config.json --n_samples 10000 --out_path data/synthetic_data.parquet
+The project uses a `config.json` file to define variables and
