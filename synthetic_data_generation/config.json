@@ -1,0 +1,18 @@
+{
+    "variables": {
+        "X1": "continuous",
+        "X2": "discrete",
+        "X3": "continuous",
+        "X4": "discrete",
+        "Y1": "continuous",
+        "Y2": "discrete",
+        "Y3": "continuous",
+        "Y4": "discrete"
+    },
+    "dependencies": {
+        "Y1": { "depends_on": ["X1", "X2"], "type": "nonlinear" },
+        "Y2": { "depends_on": ["X3", "Y1"], "type": "conditional" },
+        "Y3": { "depends_on": ["Y1", "Y2"], "type": "multiplicative" },
+        "Y4": { "depends_on": ["Y2", "Y3"], "type": "linear" }
+    }
+}
